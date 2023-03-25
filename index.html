@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        h3{
+            text-align: justify;
+        }
+    </style>
+
+    <title>Exercícios PHP</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Exercícios PHP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#pg27" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Slide 27
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#ex1">Exercicio 1</a></li>
+                      <li><a class="dropdown-item" href="#ex2">Exercício 2</a></li>
+                      <li><a class="dropdown-item" href="#ex3">Exercício 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#pg34" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Slide 34
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#ex4">Exercicio 4</a></li>
+                      <li><a class="dropdown-item" href="#ex5">Exercício 5</a></li>
+                      <li><a class="dropdown-item" href="#ex6">Exercício 6</a></li>
+                      <li><a class="dropdown-item" href="#ex7">Exercício 7</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#pg42" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Slide 42
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#ex8">Exercicio 8</a></li>
+                      <li><a class="dropdown-item" href="#ex9">Exercício 9</a></li>
+                      <li><a class="dropdown-item" href="#ex10">Exercício 10</a></li>
+                      <li><a class="dropdown-item" href="#ex11">Exercício 11</a></li>
+                      <li><a class="dropdown-item" href="#ex12">Exercício 12</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#pg55" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Slide 55-56
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#ex13">Exercicio 13</a></li>
+                      <li><a class="dropdown-item" href="#ex14">Exercício 14</a></li>
+                      <li><a class="dropdown-item" href="#ex15">Exercício 15</a></li>
+                      <li><a class="dropdown-item" href="#ex16">Exercício 16</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#pg70" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Slide 70-72
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#ex17">Exercicio 17</a></li>
+                      <li><a class="dropdown-item" href="#ex18">Exercício 18</a></li>
+                      <li><a class="dropdown-item" href="#ex19">Exercício 19</a></li>
+                      <li><a class="dropdown-item" href="#ex20">Exercício 20</a></li>
+                      <li><a class="dropdown-item" href="#ex21">Exercício 21</a></li>
+                    </ul>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+    <section id="pg27">
+        <h1>Slide 27</h1>
+        <hr>
+        <section id="ex1">
+        <h2>Exercício 1</h2>
+        <h3>Escreva um script php que, receba valores para as
+            variáveis: nome, sobrenome e a idade da pessoa e
+            apresente na tela, nome completo e idade.</h3>
+        <form action="exPHP/exercicio1.php" method="post">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Nome</span>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Sobrenome</span>
+                <input type="text" name="sobrenome" id="sobrenome" class="form-control" placeholder="Sobrenome"> 
+
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Idade</span>
+                <input type="number" name="idade" class="form-control" placeholder="Idade">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+        </section>
+        <hr>
+        <section id="ex2">
+        <h2>Exercício 2</h2>
+        <h3>Escreva um script que mostre o valor de 3 variáveis
+            numéricas. Depois atribua à primeira variável o valor
+            das outras duas variáveis. Logo após, acrescente 1 ao
+            valor da segunda variável e decresça em 1 o valor da
+            terceira variável. E exiba na tela os valores finais de
+            todas as variáveis.</h3>
+        <form action="exPHP/exercicio2.php" method="post">
+
+            <div class="input-group mb-3">
+
+                <span class="input-group-text">Número 1</span>
+                <input type="number" name="numero1" class="form-control" placeholder="Número 1">
+
+                <span class="input-group-text">Número 2</span>
+                <input type="number" name="numero2" class="form-control" placeholder="Número 2">
+
+                <span class="input-group-text">Número 3</span>
+                <input type="number" name="numero3" class="form-control" placeholder="Número 3">
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+            </div>
+
+        </form>
+        </section>
+        <hr>
+        <section id="ex3">
+            <h2>Exercicio 3</h2>
+            <h3>Escreva um script que mostre na tela os dados
+                cadastrais de uma pessoa: nome completo, endereço,
+                cidade, estados, cep, telefone, email e idade.</h3>
+            <form action="exPHP/exercicio3.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nome Completo</span>
+                    <input type="text" name="nome" placeholder="Ex: José da Cunha" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Endereço</span>
+                    <input type="text" name="endereco" placeholder="Ex: Rua XXXX" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Cidade</span>
+                    <input type="text" name="cidade" placeholder="Ex: Florianópolis" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Estado</span>
+                    <select class="form-select" aria-label="Default select example" name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">CEP</span>
+                    <input type="text" name="cep" placeholder="Ex: 00000-000" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Telefone</span>
+                    <input type="tel" name="telefone" placeholder="Ex: 999999999" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">E-mail</span>
+                    <input type="email" name="email" placeholder="Ex: xxx@xxx.com" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Idade</span>
+                    <input type="number" name="idade" placeholder="Ex: xx" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                
+
+            </form>
+
+
+        </section>
+    </section>
+    <hr>
+    <section id="pg34">
+        <h1>Slide 34</h1>
+        <hr>
+        <section id="ex4">
+
+            <h2>Exercício 4</h2>
+            <h3>Faça um script em php para determinar se um número é
+                maior, menor ou igual a zero.</h3>
+            
+            <form action="exPHP/exercicio4.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Número</span>
+                    <input type="number" name="numero" placeholder="Ex: 10" class="form-control">
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+
+            </form>
+
+        </section>
+        <hr>
+        <section id="ex5">
+            <h2>Exercício 5</h2>
+            <h3>Faça um script php que calcule a média ponderada de 3
+                notas e exiba uma das mensagens: Aprovado, Reprovado ou
+                em Prova Final. Média 7: Aprovado, menor que 3:
+                Reprovado, demais: Exame.</h3>
+            <form action="exPHP/exercicio5.php" method="post">
+
+
+                <div class="input-group mb-3">
+
+                    <span class="input-group-text">Nota 1</span>
+                    <input type="number" name="nota1" placeholder="Ex: 10" class="form-control">
+
+                    <span class="input-group-text">Nota 2</span>
+                    <input type="number" name="nota2" placeholder="Ex: 10" class="form-control">
+
+                    <span class="input-group-text">Nota 3</span>
+                    <input type="number" name="nota3" placeholder="Ex: 10" class="form-control">
+
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+
+                </div>
+
+            </form>
+        
+
+        </section>
+        <hr>
+        <section id="ex6">
+            <h2>Exercício 6</h2>
+            <h3>Faça um script php que calcule o lucro de venda da seguinte
+                forma 45% se o valor da compra for menor que R$ 200,00;
+                caso contrário, o lucro será de 30%. Entrar com o valor do
+                produto e imprimir o valor da venda.</h3>
+
+            <form action="exPHP/exercicio6.php" method="post">
+
+                <div class="input-group mb-3">
+
+                    <span class="input-group-text">Valor do Produto</span>
+                    <input type="number" name="valor" placeholder="Ex: 1000.00" class="form-control">
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </div>
+
+            </form>
+
+        </section>
+        <hr>
+        <section id="ex7">
+            <h2>Exercício 7</h2>
+            <h3>Faça um script php que, receba valores para as variáveis A,
+                B e C, em seguida, calcule a raíz quadrada e mostre na tela </h3>
+
+            <form action="exPHP/exercicio7.php" method="post">
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Variável A</span>
+                    <input type="number" name="num1" placeholder="EX: 5" class="form-control">
+
+                </div>
+        
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Variável B</span>
+                    <input type="number" name="num2" placeholder="EX: 5" class="form-control">
+
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Variável C</span>
+                    <input type="number" name="num3" placeholder="EX: 5" class="form-control">
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Calcular</button>
+
+
+            </form>
+        </section>
+        <hr>
+    </section> 
+    <section id="pg42">
+        <h1>Slide 42</h1>
+        <hr>
+        <section id="ex8">
+            <h2>Exercício 8</h2>
+            <h3>Faça um programa para calcular o fatorial de um numero
+                lido e exibir o resultado final.</h3>
+            <form action="exPHP/exercicio8.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Número</span>
+                    <input type="number" name="numero" placeholder="Informe um Número" class="form-control">
+
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </form>
+
+        </section>
+        <hr>
+        <section id="ex9">
+            <h2>Exercício 9</h2>
+            <h3>Crie um script que exiba na tela os números pares até 100
+                (inclusive).</h3>
+            <form action="exPHP/exercicio9.php">
+
+                <button type="submit" class="btn btn-success">Exibir</button>
+
+            </form>
+        </section>
+        <hr>
+        <section id="ex10">
+            <h2>Exercício 10</h2>
+            <h3>Faça uma página que receba quatro números, calcule a
+                média dos dois primeiros, a média dos dois últimos e a
+                soma dos resultados. Se a soma for menor que 8 mostre-a
+                em negrito senão mostre-a normal.</h3>
+
+            <form action="exPHP/exercicio10.php" method="post">
+
+                <div class="input-group mb-3">
+
+                    <span class="input-group-text">Número 1</span>
+                    <input type="number" name="numero1" placeholder="Ex: 10" class="form-control">
+
+                    <span class="input-group-text">Número 2</span>
+                    <input type="number" name="numero2" placeholder="Ex: 10" class="form-control">
+
+                    <span class="input-group-text">Número 3</span>
+                    <input type="number" name="numero3" placeholder="Ex: 10" class="form-control">
+
+                    <span class="input-group-text">Número 4</span>
+                    <input type="number" name="numero4" placeholder="Ex: 10" class="form-control">
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </div>
+
+            </form>
+
+        </section>
+        <hr>
+        <section id="ex11">
+            <h2>Exercício 11</h2>
+            <h3>Faça um script php que exiba os múltiplos de 3 entre 10 e
+                100.</h3>
+
+            <form action="exPHP/exercicio11.php">
+
+                <button type="submit" class="btn btn-success">Exibir</button>
+
+            </form>    
+            
+        </section>
+        <hr>
+        <section id="ex12">
+            <h2>Exercício 12</h2>
+            <h3>Crie uma página PHP usando laço FOR e WHILE que
+                escreva um mesmo texto em cada linha com tamanhos de
+                fonte diferentes. Para isso tome como base a seguinte tag
+                HTML font size x Texto /font, onde x varia de 1 a 7
+                </h3>
+            
+            <form action="exPHP/exercicio12.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Texto</span>
+                    <input type="text" name="texto" placeholder="Ex: abcdef" class="form-control">
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+        <hr>
+    </section>
+
+    <section id="pg55">
+        <h1>Slide 55-56</h1>
+        <hr>
+        <section id="ex13">
+            <h2>Exercício 13</h2>
+            <h3>Escreva um script que armazene em variáveis o
+                seu nome e o nome de 5 cores (em inglês) em um
+                array. Utilizando o comando echo, escreva seu
+                nome 5 vezes na tela. Cada ocorrência do nome
+                deve ser de uma das cores previamente
+                armazenadas nas variáveis. Utilize a tag <font>
+                para formatar os nomes.</h3>
+            <form action="exPHP/exercicio13.php" method="post">
+                <div class="input-group mb-3">
+                     <span class="input-group-text">Color 1</span>
+                     <input type="text" placeholder="Ex:Yellow" name="cor1" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Color 2</span>
+                    <input type="text" placeholder="Ex:Yellow" name="cor2" class="form-control">
+               </div>
+               <div class="input-group mb-3">
+                     <span class="input-group-text">Color 3</span>
+                     <input type="text" placeholder="Ex:Yellow" name="cor3" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Color 4</span>
+                    <input type="text" placeholder="Ex:Yellow" name="cor4" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Color 5</span>
+                    <input type="text" placeholder="Ex:Yellow" name="cor5" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nome</span>
+                    <input type="text" placeholder="José da Cunha" name="nome" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </form>
+
+        </section>
+        <hr>
+        <section id="ex14">
+            <h2>Exercício 14</h2>
+            <h3>Crie um script como uma variável mês, usando
+                switch faça um programa que retorne o mês por
+                extenso.</h3>
+            <form action="exPHP/exercicio14.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Mês</span>
+                    <input type="number" name="mes" placeholder="Ex: 4" class="form-control" max="12" min="1">
+
+                </div>
+
+                <button type="submit" class="btn btn-success">Enviar</button>
+
+            </form>
+            
+        </section>
+        <hr>    
+        <section id="ex15">
+            <h2>Exercício 15</h2>
+            <h3>Crie um script PHP usando FOR e FOREACH de
+                1 a 12 que exiba na tela os meses de Janeiro a
+                Dezembro. (pode ser usado array)</h3>
+            <form action="exPHP/exercicio15.php" method="post">
+
+                <button type="submit" class="btn btn-success">Enviar</button>
+
+            </form>
+            
+
+        </section>
+        <hr>
+        <section id="ex16">
+            <h2>Exercício 16</h2>
+            <h3>Faça um script php que receba uma letra e
+                informe se a letra é uma consoante ou vogal. (use
+                switch)</h3>
+
+            <form action="exPHP/exercicio16.php" method="post">
+
+                <div class="input-group mb-3">
+
+                    <span class="input-group-text">Letra</span>
+                    <input type="text" name="letra" placeholder="Ex: A" class="form-control" maxlength="1" minlength="1" pattern="[A-Za-z]{1}" required>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </form>
+        </section>
+        <hr>
+    </section>
+
+    <section id="pg70">
+        <h1>Slide 70-72</h1>
+        <hr>
+
+        <section id="ex17">
+            <h2>Exercício 17</h2>
+            <h3>Faça um script em php que simule uma
+                calculadora usando função. Receba 2 números por
+                parâmetro e opção (1-soma, 2-subtração,3-
+                multiplicação, 4-divisão e 5- raiz quadrada).</h3>
+            
+            <form action="exPHP/exercicio17.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Operação</span>
+                    <select name="operacao" aria-label="Default select example" class="form-select">
+                        <option value="1">Soma</option>
+                        <option value="2">Subtração</option>
+                        <option value="3">Multiplicação</option>
+                        <option value="4">Divisão</option>
+                    </select>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Número 1</span>
+                        <input type="number" name="numero1" placeholder="Ex: 4" class="form-control">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Número 2</span>
+                        <input type="number" name="numero2" placeholder="Ex: 4" class="form-control">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+
+                </div>
+
+            </form>
+
+        </section>
+        <hr>
+        <section id="ex18">
+            <h2>Exercício 18</h2>
+            <h3>Faça um script em php que, receba um número,
+                calcule o fatorial usando função e exiba o resultado
+                na tela.</h3>
+            <form action="exPHP/exercicio18.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Número</span>
+                    <input type="number" class="form-control" name="numero" placeholder="Ex: 4">
+
+                </div>
+
+                <button type="submit" class="btn btn-success">Calcular</button>
+
+            </form>
+        </section>
+        <hr>
+        <section id="ex19">
+            <h2>Exercício 19</h2>
+            <h3>Crie uma função que receba um número inteiro
+                como parâmetro e verifique se ele é primo ou não, e
+                retorne uma mensagem o local de chamada da
+                função.</h3>
+
+            <form action="exPHP/exercicio19.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Número</span>
+                    <input type="number" class="form-control" placeholder="Ex: 5" name="numero">
+                </div>
+
+                <button type="submit" class="btn btn-success">Calcular</button>
+
+            </form>
+
+        </section>
+        <hr>
+        <section id="ex20">
+            <h2>Exercício 20</h2>
+            <h3>Crie uma função que receba dois números
+                inteiros por parâmetro e retorne a soma dos N
+                números inteiros existentes entre esses dois
+                números (inclusive). Imprima o resultado no local
+                que chamou a função.</h3>
+            
+            <form action="exPHP/exercicio20.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Número 1</span>
+                    <input type="number" name="numero1" placeholder="Ex: 4" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Número 2</span>
+                    <input type="number" name="numero2" placeholder="Ex: 4" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-success">Calcular</button>
+
+            </form>
+            
+        </section>
+        <hr>
+        <section id="ex21">
+            <h2>Exercício 21</h2>
+            <h3>Faça um script em php que, receba um número,
+                calcule o fatorial usando função e recursividade e
+                exiba o resultado na tela.</h3>
+            
+            <form action="exPHP/exercicio21.php" method="post">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Número</span>
+                    <input type="number" name="numero" placeholder="Ex: 4" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-success">Calcular</button>
+
+            </form>
+
+        </section>
+    </section>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
